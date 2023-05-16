@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.2
+- Support solidity
+- Remove/ update vulnerable packages
+
 ## v0.2.1
 
 - new supported languages/file extensions
