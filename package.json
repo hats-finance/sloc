@@ -1,5 +1,5 @@
 {
-  "name": "sloc",
+  "name": "@hats.finance/sloc",
   "version": "0.2.1",
   "main": "lib/sloc",
   "bin": "bin/sloc",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "engine": "node",
   "dependencies": {
-    "async": "~2.1.4",
+    "async": "^2.6.4",
     "cli-table": "^0.3.1",
     "commander": "~2.9.0",
     "readdirp": "^2.1.0"
@@ -31,10 +31,8 @@
   "devDependencies": {
     "chai": "~3.5.0",
     "coffee-script": "~1.12.3",
-    "coffeelint": "^1.16.0",
-    "coveralls": "^2.11.15",
     "istanbul": "^0.4.5",
-    "mocha": "~3.2.0"
+    "mocha": "^10.2.0"
   },
   "repository": {
     "type": "git",
@@ -52,7 +50,6 @@
     "lib"
   ],
   "scripts": {
-    "lint": "coffeelint src/",
     "watch": "coffee -o lib -cw src/",
     "prepublish": "coffee -o lib/ -c src/",
     "test": "npm run lint && mocha --reporter spec --compilers coffee:coffee-script/register --recursive spec/*.spec.coffee"
